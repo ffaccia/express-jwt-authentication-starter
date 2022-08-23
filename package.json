@@ -1,20 +1,40 @@
 {
   "name": "jwt-auth",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "The patterns shown in this repository are meant for educational purposes.  While this is sufficiently secure to use for personal projects, there are considerations not mentioned in this tutorial series that should be explored for an enterprise-grade implementation.",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "devStart": "nodemon app.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.27.2",
+    "base64url": "^3.0.1",
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
+    "ejs": "^3.1.8",
     "express": "^4.17.1",
-    "mongoose": "^5.7.14",
-    "passport": "^0.4.0",
-    "passport-jwt": "^4.0.0"
+    "mongoose": "^5.9.13",
+    "nodemon": "^2.0.19",
+    "passport": "^0.4.1",
+    "passport-jwt": "^4.0.0",
+    "redis": "^4.2.0"
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zachgoll/express-jwt-authentication-starter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zachgoll/express-jwt-authentication-starter/issues"
+  },
+  "homepage": "https://github.com/zachgoll/express-jwt-authentication-starter#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5"
   }
 }
